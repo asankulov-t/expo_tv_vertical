@@ -16,7 +16,13 @@ export default function App() {
   console.log(data)
   return (
     <View style={styles.container}>
-      {data&&<TimedSlideshow items={data}/>}
+      {data&&<TimedSlideshow
+          duration={15000}
+          renderIcon={()=>false}
+          onClose={()=>false}
+
+          items={data}
+      />}
     </View>
   );
 }
