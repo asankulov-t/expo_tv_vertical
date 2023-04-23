@@ -19,8 +19,8 @@ export default function App() {
       {data&&<TimedSlideshow
           duration={15000}
           renderIcon={()=>false}
-          onClose={()=>false}
-
+          renderCloseIcon={()=>false}
+          titleStyle={{textTransform: 'uppercase'}}
           items={data}
       />}
     </View>
